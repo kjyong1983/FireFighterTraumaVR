@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HTC.UnityPlugin.Vive;
 
 public class Test : MonoBehaviour {
 
     public GameObject testPrefab;
+    public Material[] grabMats;
     
     public void OnCreatButtonClick()
     {
@@ -40,5 +42,15 @@ public class Test : MonoBehaviour {
         Debug.Log("7");
     }
 
+    public void AfterGrabbed()
+    {
+        Debug.Log("afterGrabb");
+        //ViveInput.event
+    }
+
+    public void OnDrop()
+    {
+        Debug.Log("afterGrabb");
+    }
 
 }
