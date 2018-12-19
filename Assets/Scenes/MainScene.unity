@@ -1235,7 +1235,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 558929773}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.37344277
+  m_Size: 0.3734427
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3566,7 +3566,7 @@ GameObject:
   - component: {fileID: 1262232901}
   m_Layer: 0
   m_Name: Main Display Camera (Host)
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5251,6 +5251,10 @@ Prefab:
     - target: {fileID: 2071970, guid: cb3370c18187bb444b240cfb08dcc02f, type: 2}
       propertyPath: m_TargetTexture
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071970, guid: cb3370c18187bb444b240cfb08dcc02f, type: 2}
+      propertyPath: m_Depth
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb3370c18187bb444b240cfb08dcc02f, type: 2}
