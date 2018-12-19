@@ -25,15 +25,19 @@ public class HandAnimationController : MonoBehaviour {
     {
         if (ViveInput.GetPress(handRole, ControllerButton.Trigger))
         {
-            state = AnimationState.PinchGrab;
+            state = AnimationState.StickGrab;
         }
-        if (ViveInput.GetPress(handRole, ControllerButton.Grip))
+        else if (ViveInput.GetPress(handRole, ControllerButton.Grip))
         {
             state = AnimationState.SphereGrab;
         }
-        if (ViveInput.GetPress(handRole, ControllerButton.Pad))
+        else if (ViveInput.GetPress(handRole, ControllerButton.Pad))
         {
-            state = AnimationState.StickGrab;
+            state = AnimationState.PinchGrab;
+        }
+        else
+        {
+            state = AnimationState.Rest;
         }
 
         animator.SetInteger("AnimationState", (int)state);
