@@ -12,7 +12,7 @@ public class UIZoom : MonoBehaviour, IScrollHandler {
     {
         if (eventData.scrollDelta != Vector2.zero)
         {
-            Debug.Log(eventData.scrollDelta);
+            //Debug.Log(eventData.scrollDelta);
             if (eventData.scrollDelta.y > 0)
             {
                 rectTransform.localScale *= 1.1f;

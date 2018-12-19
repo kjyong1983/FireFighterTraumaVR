@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &487702
 Transform:
   m_ObjectHideFlags: 1
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4647123020713812}
   m_Layer: 0
-  m_Name: VIUModelViveController
+  m_Name: VIUModelViveController backup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
