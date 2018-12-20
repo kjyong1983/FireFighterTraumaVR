@@ -1,18 +1,8 @@
 fileFormatVersion: 2
-guid: 07632f3b3d904c9419af9a1a378eb987
-labels:
-- Hose
-- Fireman
-- Flames
-- Fire
-- Water
-- Ripples
-- Splash
-- River
-- Particles
-timeCreated: 1469022494
-licenseType: Store
+guid: ee0c446d738303547859b3ce49a4ef02
 NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
