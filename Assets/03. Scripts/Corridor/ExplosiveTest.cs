@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplosiveTest : MonoBehaviour {
-
-    Transform MyTr;
+public class ExplosiveTest : MonoBehaviour
+{
+    private Transform MyTr;
     public float power;
-    ParticleSystem explosion;
-    ParticleSystem[] fires;
+    private ParticleSystem explosion;
+    private ParticleSystem[] fires;
     public Rigidbody[] expObjs;
+
     private void Start()
     {
         MyTr = this.transform;
@@ -19,6 +20,7 @@ public class ExplosiveTest : MonoBehaviour {
             fires[i] = MyTr.GetChild(i).GetComponent<ParticleSystem>();
         }
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.O))
@@ -26,7 +28,8 @@ public class ExplosiveTest : MonoBehaviour {
             Explosion();
         }
     }
-    void Explosion()
+
+    public void Explosion()
     {
         //폭발 효과 파티클 생성
         explosion.Play();
