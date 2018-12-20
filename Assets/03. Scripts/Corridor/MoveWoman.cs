@@ -6,6 +6,7 @@ public class MoveWoman : MonoBehaviour {
 
     public float speed = 1.0f;
     public float damping = 3.0f;
+    public GameObject fire;
     private Transform point;  
 
     private Animator anim;
@@ -38,6 +39,7 @@ public class MoveWoman : MonoBehaviour {
         if (direction.magnitude < 1f)
         {
             anim.SetBool("Run", false);
+           
         }
         else
         {
@@ -52,6 +54,7 @@ public class MoveWoman : MonoBehaviour {
         if (other.CompareTag("WAY_POINT"))
         {
             anim.SetBool("Run", false);
+            Destroy(fire);
         }
     }
 }

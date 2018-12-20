@@ -63148,6 +63148,7 @@ MonoBehaviour:
   - {fileID: 1300670250}
   - {fileID: 1994042189}
   - {fileID: 157860763}
+  audio: {fileID: 0}
 --- !u!1 &930580665
 GameObject:
   m_ObjectHideFlags: 0
@@ -77553,7 +77554,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &1149644953
 MonoBehaviour:
@@ -77568,7 +77569,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   damping: 3
-  hashRun: 0
+  isRun: 0
+  isRotating: 1
 --- !u!136 &1149644954
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -90146,14 +90148,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1318883005}
-  m_LocalRotation: {x: 0, y: 0, z: -0.86602545, w: 0.49999994}
+  m_LocalRotation: {x: 0.000000059604638, y: 0.0000000745058, z: -0.38268524, w: 0.9238788}
   m_LocalPosition: {x: 0.019034, y: -0.014219, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 498049778}
   m_Father: {fileID: 1072512601}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45.000004}
 --- !u!23 &1318883007
 MeshRenderer:
   m_ObjectHideFlags: 0
