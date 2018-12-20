@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class ChangeHandModel : MonoBehaviour {
 
-    public GameObject rightHand;
-    public GameObject leftHand;
+    public GameObject extinguisher;
+//    public GameObject[] hands;
 
-    public GameObject[] hands;
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerExit(Collider other)
     {
-        Debug.Log("OnTriggerEnter");
+        Debug.Log(other.gameObject.name);
 
-        if (other.gameObject == rightHand)
+        if (other.transform.parent.parent.parent.name == "Right")
         {
-            rightHand = hands[1];
-        }
-
-        if (other.gameObject == leftHand)
-        {
-            leftHand = hands[1];
+            if (extinguisher.gameObject.activeSelf)
+            {
+                extinguisher.SetActive(false);
+            }
+            else
+            {
+                extinguisher.SetActive(true);
+            }
         }
     }
 }
