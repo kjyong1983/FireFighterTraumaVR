@@ -2,18 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParticleOnOff : MonoBehaviour {
+public class ParticleOnOff : MonoBehaviour
+{
     public ParticleSystem pat;
-    private bool isOn= false;
-	// Use this for initialization
-	void Start () {
+    private bool isOn = false;
+
+    // Use this for initialization
+    private void Start()
+    {
         pat.Stop();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown("1"))
+        //if (Input.GetKeyDown("1"))
+        if (Input.GetKeyDown(KeyCode.Keypad0))
         {
             if (!isOn)
             {
