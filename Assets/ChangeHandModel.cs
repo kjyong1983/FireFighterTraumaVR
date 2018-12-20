@@ -9,6 +9,11 @@ public class ChangeHandModel : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
+        if (other.gameObject.tag != "Hand")
+        {
+            return;
+        }
+
         Debug.Log(other.gameObject.name);
 
         if (other.transform.parent.parent.parent.name == "Right")
