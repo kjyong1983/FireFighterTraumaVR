@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e10a6c8bc50f348a3bcd045dce48c3, type: 3}
   m_Name: VIUSettings
   m_EditorClassIdentifier: 
-  m_autoCheckNewVIUVersion: 1
+  m_autoCheckNewVIUVersion: 0
   m_autoLoadBindingConfigOnStart: 1
   m_bindingConfigFilePath: vive_role_bindings.cfg
   m_enableBindingInterfaceSwitch: 1
