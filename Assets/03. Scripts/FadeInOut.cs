@@ -10,6 +10,8 @@ public class FadeInOut : MonoBehaviour {
     public Color transparent;
     public float _duration;
 
+    public AudioSource breathSound;
+
     public void OnFadeInButtonClick()
     {
         StartCoroutine(FadeIn(_duration));
@@ -17,6 +19,7 @@ public class FadeInOut : MonoBehaviour {
 
     public void OnFadeOutButtonClick()
     {
+        breathSound.Play();
         StartCoroutine(FadeOut(_duration));
     }
 
