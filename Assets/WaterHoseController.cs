@@ -9,6 +9,7 @@ public class WaterHoseController : MonoBehaviour
     private ParticleOnOff waterController;
     public HandRole handRole;
     private ControllerButton button = ControllerButton.Trigger;
+    public AudioSource waterHoseSound;
 
     private void Start()
     {
@@ -22,6 +23,19 @@ public class WaterHoseController : MonoBehaviour
         if (ViveInput.GetPress(handRole, button) && hose.activeSelf)
         {
             waterController.pat.Play();
+            waterHoseSound.Play();
         }
+
+        if (ViveInput.GetPressUp(handRole, button) && hose.activeSelf)
+        {
+            waterController.pat.Stop();
+            waterHoseSound.Stop();
+        }
+
+
+        //if (!waterController.pat.isPlaying)
+        //{
+        //    waterHoseSound.Stop();
+        //}
     }
 }
