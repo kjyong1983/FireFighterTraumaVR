@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeHandModel : MonoBehaviour {
-
+public class ChangeHandModel : MonoBehaviour
+{
     public GameObject extinguisher;
-//    public GameObject[] hands;
+    //public GameObject[] hands;
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag != "Hand")
         {

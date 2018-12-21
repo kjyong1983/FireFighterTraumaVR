@@ -13,6 +13,8 @@ public class MoveWoman : MonoBehaviour {
     public bool isRun = false;
     public bool isRotating = true;
 
+    public AudioSource audio;
+    public bool isAudioPlayed = false;
 
     // Use this for initialization
     void Start () {
@@ -33,13 +35,19 @@ public class MoveWoman : MonoBehaviour {
     public void Run()
     {
         anim.SetBool("Run", true);
-        Debug.Log("run");
+        if (!isAudioPlayed)
+        {
+            audio.Play();
+            isAudioPlayed = true;
+        }
+        //Debug.Log("run");
         Vector3 direction = point.position - transform.position;
 
         if (direction.magnitude < 1f)
         {
             anim.SetBool("Run", false);
-           
+            Destroy(fire);
+
         }
         else
         {

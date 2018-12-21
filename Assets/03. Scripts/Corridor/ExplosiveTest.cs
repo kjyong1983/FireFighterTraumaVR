@@ -10,7 +10,8 @@ public class ExplosiveTest : MonoBehaviour
     private ParticleSystem[] fires;
     public Rigidbody[] expObjs;
 
-    public AudioSource audio;
+    public AudioSource audio1;
+    public AudioSource audio2;
 
     private void Start()
     {
@@ -52,7 +53,8 @@ public class ExplosiveTest : MonoBehaviour
             fires[i].Play();
         }
 
-        audio.Play();
+        audio1.Play();
+        audio2.Play();
 
         //5초 후 드럼통 제거
         //Destroy(gameObject, 5.0f);
